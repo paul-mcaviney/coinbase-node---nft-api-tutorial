@@ -1,7 +1,7 @@
 # `coinbase-node-nft-api-tutorial` Repository
 
 > The `coinbase-wallet-example` repository is simple web3 Dapp example built upon [React](https://reactjs.org/) and
-> [web3](https://web3js.readthedocs.io/en/v1.3.0/) to illustrate how easy it is to get started with the [Coinbase Wallet](https://www.coinbase.com/wallet).
+> [web3](https://web3js.readthedocs.io/en/v1.3.0/) to illustrate how easy it is to add functionality to our dapp with the [Coinbase Cloud Node](https://www.coinbase.com/cloud/products/node) and [NFT APIs](https://www.coinbase.com/cloud/products/nft-api).
 
 ## Publications
 
