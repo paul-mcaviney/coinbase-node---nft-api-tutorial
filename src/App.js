@@ -3,17 +3,10 @@ import './App.css';
 import CoinbaseWalletSDK from '@coinbase/wallet-sdk'
 import Web3 from 'web3';
 
-const APP_NAME = 'coinbase-wallet-example';
-const APP_LOGO_URL = './coinbase-logo.png';
-const DEFAULT_ETH_JSONRPC_URL = 'https://ropsten.infura.io/v3/56f ... d69'; // Replace with your own Infura.io project
-const DEFAULT_CHAIN_ID = 1; // 1=Ethereum (mainnet), 3=Ropsten, 5=Gorli
-const DEFAULT_ETHEREUM_CHAIN_ID = '0x1'; // Should match DEFAULT_CHAIN_ID above, but with leading 0x
-
 // Coinbase Credentials
 const COINBASE_URL = {YOUR_API_ENDPOINT};
 const USERNAME = {YOUR_USERNAME};
 const PASSWORD = {YOUR_PASSWORD};
-
 
 // Create the headers
 const STRING = `${USERNAME}:${PASSWORD}`;
@@ -22,6 +15,14 @@ const HEADERS = new Headers ({
   'Content-Type':'application/json',
   'Authorization':`Basic ${BASE64STRING}`
 });
+
+// Coinbase Wallet Initialization
+const APP_NAME = 'coinbase-wallet-example';
+const APP_LOGO_URL = './coinbase-logo.png';
+const DEFAULT_ETH_JSONRPC_URL = COINBASE_URL;
+const DEFAULT_CHAIN_ID = 1; // 1=Ethereum (mainnet), 3=Ropsten, 5=Gorli
+const DEFAULT_ETHEREUM_CHAIN_ID = '0x1'; // Should match DEFAULT_CHAIN_ID above, but with leading 0x
+
 
 const App = () => {
   
@@ -263,6 +264,5 @@ return (
   </div>
 );
 }
-
 
 export default App;
